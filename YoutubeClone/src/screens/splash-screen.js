@@ -16,7 +16,7 @@ const SplashScreen = () => {
         <View>
             <View style={styles.container}>
             <Image
-          source={require('../assets/YouTube-Symbol.png')} 
+          source={require('../assets/images/YouTube-Symbol.png')} 
           style={styles.image}/>
           </View>
 
