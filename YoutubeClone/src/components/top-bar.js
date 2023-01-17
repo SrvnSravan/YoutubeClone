@@ -1,7 +1,13 @@
 import React from "react";
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import {useNavigation} from "@react-navigation/native";
+import SearchScreen from "../screens/search-screen";
 
 const TopBar = () => {
+    
+const nav = useNavigation();
+
     return(
         <View style={styles.container}>
             <View style={styles.imageContainer}>
@@ -9,16 +15,26 @@ const TopBar = () => {
             </View>
 
             <View style={styles.screenIconContainer}>
+                <TouchableOpacity>
                 <Image style={styles.screen}source={require('../assets/images/screen-share.png')}/>
+                </TouchableOpacity>
             </View>
             <View style={styles.bellContainer}>
+                <TouchableOpacity>
                 <Image style={styles.bell} source={require('../assets/images/Bell1.png')}/>
+                </TouchableOpacity>
             </View>
             <View style={styles.searchContainer}>
-                <Image style={styles.search} source={require('../assets/images/search.png')}/>
+                <TouchableOpacity onPress={()=> nav.navigate(SearchScreen)}>
+            <Text>
+              <Icon name="search" size={30} color="black"/>
+            </Text>
+            </TouchableOpacity>
             </View>
             <View style={styles.dpContainer}>
+            <TouchableOpacity>
                 <Image style={styles.dp} source={require('../assets/images/dp.jpg')}/>
+                </TouchableOpacity>
             </View>
         </View>
         
@@ -59,7 +75,7 @@ const styles = StyleSheet.create({
         height: 20
     },
     searchContainer : {
-        marginTop: 10,
+        marginTop: 8,
         marginLeft: 20
     },
     dpContainer : {

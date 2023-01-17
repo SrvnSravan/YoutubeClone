@@ -1,11 +1,8 @@
-import React from "react";
-import Navigation from "./src/navigation/navigation";
-
+import React from 'react';
+import ScreenNavigation from './src/navigation/navigation';
 
 function App() {
-  return (
-    <Navigation />
-  );
+  return <ScreenNavigation />;
 }
 
 export default App;

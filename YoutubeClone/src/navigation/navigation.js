@@ -1,21 +1,19 @@
-import React from "react";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from "../screens/splash-screen";
-import { NavigationContainer } from "@react-navigation/native";
-import HomeScreen from "../screens/home-screen";
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import SearchScreen from '../screens/search-screen';
+import MyTabs from '../components/bottom-tab';
 
 const Stack = createNativeStackNavigator();
 
-function Navigation() {
+const ScreenNavigation = () => {
   return (
     <NavigationContainer>
-    <Stack.Navigator >
-      <Stack.Screen 
-      options={{ headerShown: false}}
-       name="HomeScreen" component={HomeScreen} />
-    </Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="MyTabs" component={MyTabs} />
+        <Stack.Screen name="SearchScreen" component={SearchScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
-}
-
-export default Navigation;
+};
+export default ScreenNavigation;

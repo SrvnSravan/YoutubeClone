@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {View, Text, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
 
 const GenreCard = () => {
     return(
@@ -8,47 +8,69 @@ const GenreCard = () => {
         <View style={styles.container}>
             <View style={styles.cardContainer}>
 
+            <TouchableOpacity>    
             <Text style={styles.text}>Food</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Travel</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Sports</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Vlogs</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Music</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Vlogs</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
-            <Text style={styles.text}>Vehicles</Text>
+            <TouchableOpacity>
+            <Text style={styles.text}>Learn</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>News</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Film</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Artist</Text>
+            </TouchableOpacity>
             </View>
 
             <View style={styles.cardContainer}>
+            <TouchableOpacity>
             <Text style={styles.text}>Games</Text>
+            </TouchableOpacity>
             </View>
 
 
@@ -63,7 +85,9 @@ const GenreCard = () => {
 const styles = StyleSheet.create({
     container : {
         flexDirection: 'row',
-        marginLeft: 5
+        marginLeft: 5,
+        marginTop: 5,
+        marginBottom: 5
     },
     cardContainer : {
         borderRadius: 15,
