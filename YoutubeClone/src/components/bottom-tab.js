@@ -9,16 +9,16 @@ import {NavigationContainer} from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator();
 
-function MyTabs() {
+function BottomTab() {
   return (
     <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="ShortsScreen" component={ShortsScreen} />
-      <Tab.Screen name="UploadScreen" component={UploadScreen} />
-      <Tab.Screen name="SubscriptionScreen" component={SubscriptionScreen} />
-      <Tab.Screen name="LibraryScreen" component={LibraryScreen} />
+      <Tab.Screen name="Shorts" component={ShortsScreen} />
+      <Tab.Screen name="Upload" component={UploadScreen} />
+      <Tab.Screen name="Subscription" component={SubscriptionScreen} />
+      <Tab.Screen name="Library" component={LibraryScreen} />
     </Tab.Navigator>
   );
 }
 
-export default MyTabs;
+export default BottomTab;

@@ -7,12 +7,19 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const SearchBar = () => {
+  const navigation = useNavigation();
+
+  const handleReturnPress = () => {
+    navigation.goBack();
+  };
+
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={{ flexDirection: 'row' }}>
       <View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={handleReturnPress}>
           <Image
             style={styles.return}
             source={require('../assets/images/return1.png')}
@@ -20,14 +27,15 @@ const SearchBar = () => {
         </TouchableOpacity>
       </View>
 
-      <View styles={styles.inputContainer}>
+      <View style={styles.inputContainer}>
         <TextInput
           style={styles.inputBox}
           placeholder="Search YouTube"
           placeholderTextColor={'#808080'}
           textAlign="left"
           backgroundColor="#d9d9d9"
-          clearButtonMode="always"></TextInput>
+          clearButtonMode="always"
+        />
       </View>
 
       <View>
