@@ -37,11 +37,31 @@ const BottomTab = () => {
         activeTintColor: 'black',
         inactiveTintColor: 'gray',
       }}>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Shorts" component={ShortsScreen} />
-      <Tab.Screen name="Upload" component={UploadScreen} />
-      <Tab.Screen name="Subscription" component={SubscriptionScreen} />
-      <Tab.Screen name="Library" component={LibraryScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Shorts"
+        component={ShortsScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Upload"
+        component={UploadScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Subscription"
+        component={SubscriptionScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Library"
+        component={LibraryScreen}
+        options={{headerShown: false}}
+      />
     </Tab.Navigator>
   );
 };

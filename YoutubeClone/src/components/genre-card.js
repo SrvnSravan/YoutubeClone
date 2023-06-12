@@ -85,8 +85,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginLeft: 5,
-    marginTop: 5,
-    marginBottom: 5,
+    marginTop: 20,
+    marginBottom: 20,
   },
   cardContainer: {
     borderRadius: 15,
