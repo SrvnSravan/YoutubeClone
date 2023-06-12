@@ -92,8 +92,9 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   dp: {
-    width: 25,
-    height: 25,
+    width: 30,
+    height: 30,
+    borderRadius: 15
   },
 });
 
