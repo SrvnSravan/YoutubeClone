@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, ScrollView, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const HomeFeeds = () => {
@@ -7,12 +14,12 @@ const HomeFeeds = () => {
     <ScrollView>
       <View>
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail.png')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail.png')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -33,29 +40,27 @@ const HomeFeeds = () => {
               }}>
               How to make a Youtube Video...
             </Text>
-          
+
             <Text style={{marginLeft: 5, fontSize: 15, color: 'grey'}}>
               Toms Maverick . 29k views . 2hrs ago
             </Text>
-            
           </View>
-          
+
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
           </View>
-      
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail2.webp')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail2.webp')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -81,7 +86,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -89,12 +94,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail3.jpg')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail3.jpg')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -120,7 +125,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -128,12 +133,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail5.webp')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail5.webp')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -159,7 +164,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -167,12 +172,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail6.webp')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail6.webp')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -198,7 +203,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -206,12 +211,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail.png')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail.png')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -237,7 +242,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -245,12 +250,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail.png')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail.png')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -276,7 +281,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -284,12 +289,12 @@ const HomeFeeds = () => {
         </View>
 
         <View>
-        <TouchableOpacity>
-          <Image
-            style={styles.thumbnail}
-            source={require('../assets/images/thumbnail.png')}
-          />
-           </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              style={styles.thumbnail}
+              source={require('../assets/images/thumbnail.png')}
+            />
+          </TouchableOpacity>
         </View>
 
         <View style={{flexDirection: 'row'}}>
@@ -315,7 +320,7 @@ const HomeFeeds = () => {
             </Text>
           </View>
           <View>
-          <Image
+            <Image
               style={styles.threeDot}
               source={require('../assets/images/three-dot.png')}
             />
@@ -346,6 +351,6 @@ const styles = StyleSheet.create({
     marginTop: 15,
     height: 20,
     width: 20,
-    marginLeft: 30
-  }
+    marginLeft: 30,
+  },
 });
