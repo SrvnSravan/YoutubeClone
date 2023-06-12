@@ -34,7 +34,7 @@ const BottomTab = () => {
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'blue',
+        activeTintColor: 'black',
         inactiveTintColor: 'gray',
       }}>
       <Tab.Screen name="Home" component={HomeScreen} />
